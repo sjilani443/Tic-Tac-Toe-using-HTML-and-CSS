@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <style>
+        body{
+            background-color: #CED0CE;
+        }
+        .main
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #191919;
+        }
+        .btns
+        {
+            display: flex;
+            flex-wrap: wrap;
+            height:60vmin;
+            width: 60vmin;
+            align-items:center;
+            justify-content:center;
+            gap:10px;
+        }
+        .btn
+        {
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 8px;
+            font-size:50px;
+            background-color: #F15025;
+            color:#191919;
+        }
+        .reset
+        {
+            margin-top: 30px;
+            background-color: #E6E8E6;
+            height: 2rem;
+            font-size: 18px;
+            color: #191919;
+            border-radius: 5px;
+        }
+        .winner
+        {
+            height:60vh;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+        }
+        .hide
+        {
+            display: none;
+        }
+        .newgame
+        {
+            background-color: #E6E8E6;
+            height: 2rem;
+            font-size: 18px;
+            color: #191919;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="winner hide">
+            <h1 class="msg">Winner</h1>
+            <button class="newgame">New Game</button>
+        </div>
+        <div class="title"><h1>Tic Tac Toe</h1></div>
+        <div class="btns">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+        <button class="reset">Reset</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
